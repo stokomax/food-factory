@@ -1,0 +1,16 @@
+
+
+class Food:
+    def getName(self) -> str: ...
+
+class Biscuit(Food):
+    def __init__(self) -> None: ...
+
+class Chocolate(Food):
+    def __init__(self) -> None: ...
+
+class Factory:
+    @staticmethod
+    def get_instance() -> Factory: ...
+
+    def make_food(self, arg: str, /) -> Food: ...
